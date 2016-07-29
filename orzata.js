@@ -1,12 +1,12 @@
 'use strict';
 
-var express = require('./espresso/express');
+var express = require('./orzata/express');
 module.exports.express = express;
 
-var mongoose = require('./espresso/mongoose');
+var mongoose = require('./orzata/mongoose');
 module.exports.mongoose = mongoose;
 
-var users = require('./espresso/models/users');
+var users = require('./orzata/models/users');
 module.exports.users = users;
 
 var install = function( application )
