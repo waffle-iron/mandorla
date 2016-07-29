@@ -1,8 +1,8 @@
 {
-  "name": "exp",
+  "name": "espresso",
   "version": "0.0.1",
   "description": "expand express",
-  "main": "exp.js",
+  "main": "espresso.js",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
@@ -14,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noidhoon/exp.git"
+    "url": "git+https://github.com/noidhoon/espresso.git"
   },
   "author": "Sabato Luca 'noidhoon' Guadagno",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/noidhoon/exp/issues"
+    "url": "https://github.com/noidhoon/espresso/issues"
   },
-  "homepage": "https://github.com/noidhoon/exp#readme"
+  "homepage": "https://github.com/noidhoon/espresso#readme"
 }
