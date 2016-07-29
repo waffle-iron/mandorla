@@ -1,0 +1,25 @@
+{
+  "name": "exp",
+  "version": "0.0.1",
+  "description": "expand express",
+  "main": "exp.js",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "mongoose": "^4.5.7",
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/noidhoon/exp.git"
+  },
+  "author": "Sabato Luca 'noidhoon' Guadagno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/noidhoon/exp/issues"
+  },
+  "homepage": "https://github.com/noidhoon/exp#readme"
+}
