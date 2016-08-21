@@ -1,12 +1,11 @@
 {
-  "name": "orzata",
-  "version": "0.0.1",
+  "name": "mandorla",
+  "version": "0.1",
   "description": "express boilerplate",
-  "main": "orzata.js",
+  "main": "mandorla.js",
   "dependencies": {
     "body-parser": "^1.15.2",
     "express": "^4.14.0",
-    "jsonwebtoken": "^7.1.7",
     "mongoose": "^4.5.7"
   },
   "devDependencies": {},
@@ -15,12 +14,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/noidhoon/orzata.git"
+    "url": "git+https://github.com/orzata/mandorla.git"
   },
   "author": "Sabato Luca 'noidhoon' Guadagno",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/noidhoon/orzata/issues"
+    "url": "https://github.com/orzata/mandorla/issues"
   },
-  "homepage": "https://github.com/noidhoon/orzata#readme"
+  "homepage": "https://github.com/orzata/mandorla#readme"
 }
