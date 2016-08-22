@@ -1,4 +1,4 @@
-# Mandorla 0.2.0
+# Mandorla 0.3.0
 Express and mongoose boilerplate
 
 ### Download stable
@@ -16,12 +16,7 @@ $ wget https://github.com/orzata/mandorla/develop.zip
 $ npm install
 ```
 
-### Debug mode
+### Run
 ```
-$ DEBUG=express,mongoose node mandorla.js
-```
-
-### Production mode
-```
-$ NODE_ENV=production node mandorla.js
+$ node mandorla
 ```
