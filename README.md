@@ -1,4 +1,4 @@
-# Mandorla 0.2.0
+# Mandorla 0.2.x
 Express and mongoose boilerplate
 
 ### Download stable
@@ -10,7 +10,7 @@ $ wget https://github.com/orzata/mandorla/master.zip
 ```
 $ wget https://github.com/orzata/mandorla/develop.zip
 ```
-
+g
 ### Install
 ```
 $ npm install
