@@ -1,6 +1,6 @@
 {
   "name": "mandorla",
-  "version": "0.2.x",
+  "version": "0.2.0",
   "description": "express and mongoose boilerplate",
   "main": "mandorla.js",
   "dependencies": {
