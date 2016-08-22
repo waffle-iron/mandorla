@@ -1,42 +1,36 @@
 'use strict';
 
 var mongoose = require('mongoose');
+var debug = require('debug')('mongoose');
 
 mongoose.connection.on('connected', function() {
-  console.log('[ mongoose ] Info: connected');
+  debug('Connected')
 });
 
 mongoose.connection.on('error', function( error ) {
-  console.log('[ mongoose ] Error: ' + error );
+  debug('Error: %s', error );
 });
 
 mongoose.connection.on('disconnected', function() {
-  console.log('[ mongoose ] Info: disconnected');
+  debug('Disconnected');
 });
 
-var shutdown = function( message, callback ) {
-  mongoose.connection.close( function() {
-    console.log('[ mongoose ] Shutdown: ' + message );
-    callback();
-  });
-}
-
 process.once('SIGUSR2', function() {
-  shutdown('nodeamon restart', function() {
-    process.kill( process.pid, 'SIGUSR2');
-  });
+  debug('Closing connection SIGUSR2');
+  mongoose.connection.close();
+  process.kill( process.pid, 'SIGUSR2');
 });
 
 process.once('SIGINT', function() {
-  shutdown('application termination', function() {
-    process.exit( 0 );
-  });
+  debug('Closing connection SIGINT');
+  mongoose.connection.close();
+  process.exit( 0 );
 });
 
 process.once('SIGTERM', function() {
-  shutdown('heroku application shutdown', function() {
-    process.exit( 0 );
-  });
+  debug('Closing connection SIGTERM');
+  mongoose.connection.close();
+  process.exit( 0 );
 });
 
 module.exports = mongoose;
