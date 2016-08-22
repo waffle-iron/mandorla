@@ -10,18 +10,13 @@ $ wget https://github.com/orzata/mandorla/master.zip
 ```
 $ wget https://github.com/orzata/mandorla/develop.zip
 ```
-g
+
 ### Install
 ```
 $ npm install
 ```
 
-### Debug mode
+### Run
 ```
-$ DEBUG=express,mongoose node mandorla.js
-```
-
-### Production mode
-```
-$ NODE_ENV=production node mandorla.js
+$ node mandorla
 ```
