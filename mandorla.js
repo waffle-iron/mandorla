@@ -1,7 +1,12 @@
 'use strict';
 
-var express = require('./mandorla/configurations/express');
-module.exports.express = express;
+var application = require('./src/configurations/express');
+var mongoose = require('./src/configurations/mongoose');
 
-var mongoose = require('./mandorla/configurations/mongoose');
-module.exports.mongoose = mongoose;
+mongoose.connect('mongodb://localhost/mandorla');
+
+application.get('/', function( request, response ) {
+  response.send('Hello mandorla');
+});
+
+application.listen( 3000, '0.0.0.0');
