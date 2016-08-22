@@ -1,4 +1,4 @@
-# Mandorla 0.2.x
+# Mandorla 0.3.0
 Express and mongoose boilerplate
 
 ### Download stable
