@@ -14,7 +14,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node mandorla.js",
+    "develop": "nodemon mandorla.js",
+    "production": "pm2 mandorla.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {

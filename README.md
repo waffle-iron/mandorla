@@ -1,5 +1,5 @@
-# Mandorla 0.3.0
-Express and mongoose boilerplate
+# orzata / mandorla
+Starting point to build express applications.
 
 ### Download stable
 ```
