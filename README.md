@@ -3,12 +3,12 @@ Express and mongoose boilerplate
 
 ### Download stable
 ```
-$ wget https://github.com/orzata/mandorla/master.zip
+$ wget https://github.com/orzata/mandorla/archive/master.zip
 ```
 
 ### Download dev
 ```
-$ wget https://github.com/orzata/mandorla/develop.zip
+$ wget https://github.com/orzata/mandorla/archive/develop.zip
 ```
 
 ### Install
@@ -18,5 +18,5 @@ $ npm install
 
 ### Run
 ```
-$ node mandorla
+$ npm start
 ```
