@@ -9,17 +9,19 @@
     "express": "^4.14.0",
     "mongoose": "^4.5.7",
     "morgan-debug": "^1.0.0",
-    "nconf": "^0.8.4"
+    "nconf": "^0.8.4",
+    "pug": "^2.0.0-beta6"
   },
   "devDependencies": {},
   "scripts": {
+    "start": "node mandorla.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/orzata/mandorla.git"
   },
-  "author": "Sabato Luca 'noidhoon' Guadagno",
+  "author": "Sabato Luca 'noidhoon' Guadagno <noidhoon@gmail.com> (https://noidhoon.github.io)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/orzata/mandorla/issues"

@@ -13,4 +13,7 @@ application.use( compression() );
 var morgan = require('morgan-debug');
 application.use( morgan('express', 'dev') );
 
+application.set('view engine', 'pug');
+application.set('views', './src/views');
+
 module.exports = application;
