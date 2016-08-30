@@ -1,19 +1,34 @@
 'use strict';
 
-var express = require('express');
-var application = express();
+module.exports = function( nconf, mongoose )
+{
+  var express = require('express');
+  var application = express();
 
-var bodyparser = require('body-parser');
-application.use( bodyparser.urlencoded({ extended: true }) );
-application.use( bodyparser.json() );
+  var helmet = require('helmet');
+  application.use( helmet );
 
-var compression = require('compression');
-application.use( compression() );
+  var session = require('express-session');
+  var mongo = require('connect-mongo')( session );
+  application.use( session({
+    store: new mongo({ url: nconf.get('mongoose:url') }),
+    secret: nconf.get('session:secret'),
+    resave: false,
+    saveUninitialized: true,
+  }));
 
-var morgan = require('morgan-debug');
-application.use( morgan('express', 'dev') );
+  var bodyparser = require('body-parser');
+  application.use( bodyparser.urlencoded({ extended: true }) );
+  application.use( bodyparser.json() );
 
-application.set('view engine', 'pug');
-application.set('views', './src/views');
+  var compression = require('compression');
+  application.use( compression() );
 
-module.exports = application;
+  var morgan = require('morgan-debug');
+  application.use( morgan('express', 'dev') );
+
+  application.set('view engine', 'pug');
+  application.set('views', './src/views');
+
+  return application;
+}
