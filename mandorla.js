@@ -1,16 +1,8 @@
 'use strict';
 
-process.env.NODE_ENV = 'development';
-process.env.DEBUG = 'express mongoose';
+var mandorla = {};
+mandorla.nconf = require('./mandorla/node_configurations/nconf');
+mandorla.mongoose = require('./mandorla/node_configurations/mongoose')( mandorla.nconf );
+mandorla.application = require('./mandorla/node_configurations/express')( mandorla.nconf, mandorla.mongoose );
 
-var application = require('./src/mandorla/express');
-var mongoose = require('./src/mandorla/mongoose');
-var nconf = require('./src/mandorla/nconf');
-
-mongoose.connect( nconf.get('mongoose:url') );
-
-application.get('/', function( request, response ) {
-  response.send('Hello mandorla');
-});
-
-application.listen( nconf.get('express:port'), nconf.get('express:host') );
+module.exports = mandorla;

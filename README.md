@@ -1,22 +1,22 @@
-# Mandorla 0.3.0
-Express and mongoose boilerplate
+# orzata / mandorla
+Starting point to build express applications.
 
-### Download stable
+### Initialize your project
 ```
-$ wget https://github.com/orzata/mandorla/master.zip
-```
-
-### Download dev
-```
-$ wget https://github.com/orzata/mandorla/develop.zip
+$ npm init
 ```
 
-### Install
+### Add mandorla to your project
 ```
-$ npm install
+$ npm install --save mandorla
+```
+
+### Create boilerplate
+```
+$ node node_modules/.bin/mandorla-cli --init
 ```
 
 ### Run
 ```
-$ node mandorla
+$ node index.js
 ```
