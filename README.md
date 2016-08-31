@@ -1,22 +1,22 @@
 # orzata / mandorla
 Starting point to build express applications.
 
-### Download stable
+### Initialize your project
 ```
-$ wget https://github.com/orzata/mandorla/archive/master.zip
-```
-
-### Download dev
-```
-$ wget https://github.com/orzata/mandorla/archive/develop.zip
+$ npm init
 ```
 
-### Install
+### Add mandorla to your project
 ```
-$ npm install
+$ npm install --save mandorla
+```
+
+### Create boilerplate
+```
+$ node node_modules/.bin/mandorla-cli --init
 ```
 
 ### Run
 ```
-$ npm start
+$ node index.js
 ```

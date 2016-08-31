@@ -4,7 +4,7 @@ var orzata = require('commander');
 var exec = require('child_process').exec;
 var fs = require('fs');
 
-orzata.version('0.4.2')
+orzata.version('0.4.5')
   .option('--init', 'Create the boilerplate')
   .parse( process.argv );
 

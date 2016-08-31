@@ -7,7 +7,7 @@ var mandorla = require('mandorla');
 
 var nconf = mandorla.nconf;
 var mongoose = mandorla.mongoose;
-var application = mandorla.express;
+var application = mandorla.application;
 
 application.get('/', function( request, response ) {
   response.send('Hello mandorla');

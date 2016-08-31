@@ -10,6 +10,7 @@ module.exports = function( nconf, mongoose )
 
   var session = require('express-session');
   var mongo = require('connect-mongo')( session );
+  console.log( nconf.get('mongoose:url'));
   application.use( session({
     store: new mongo({ url: nconf.get('mongoose:url') }),
     secret: nconf.get('session:secret'),
