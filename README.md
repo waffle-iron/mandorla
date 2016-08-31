@@ -1,4 +1,6 @@
 # orzata / mandorla
+[![npm version](https://badge.fury.io/js/mandorla.svg)](https://badge.fury.io/js/mandorla)
+
 Starting point to build express applications.
 
 ### Initialize your project
