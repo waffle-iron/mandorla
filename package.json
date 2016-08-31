@@ -1,6 +1,6 @@
 {
   "name": "mandorla",
-  "version": "0.4.5",
+  "version": "0.4.6",
   "description": "orzata boilerplate",
   "main": "mandorla.js",
   "dependencies": {

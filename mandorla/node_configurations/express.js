@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function( nconf, mongoose )
+module.exports = function( nconf )
 {
   var express = require('express');
   var application = express();
