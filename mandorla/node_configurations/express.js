@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function( nconf, mongoose )
+module.exports = function( nconf )
 {
   var express = require('express');
   var application = express();
@@ -9,10 +9,9 @@ module.exports = function( nconf, mongoose )
   application.use( helmet );
 
   var session = require('express-session');
-  var mongo = require('connect-mongo')( session );
-  console.log( nconf.get('mongoose:url'));
+  var redis = require('connect-redis')( session );
   application.use( session({
-    store: new mongo({ url: nconf.get('mongoose:url') }),
+    store: new redis(),
     secret: nconf.get('session:secret'),
     resave: false,
     saveUninitialized: true,
