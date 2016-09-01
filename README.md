@@ -15,9 +15,14 @@ $ npm init
 $ npm install --save mandorla
 ```
 
+### Install mandorla-cli
+```
+$ npm install --global mandorla-cli
+```
+
 ### Create boilerplate
 ```
-$ node node_modules/.bin/mandorla-cli --init
+$ mandorla-cli --init
 ```
 
 ### Run
