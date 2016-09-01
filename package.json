@@ -1,11 +1,10 @@
 {
   "name": "mandorla",
-  "version": "0.4.6",
+  "version": "0.4.7",
   "description": "orzata boilerplate",
   "main": "mandorla.js",
   "dependencies": {
     "body-parser": "^1.15.2",
-    "commander": "^2.9.0",
     "compression": "^1.6.2",
     "connect-redis": "^3.1.0",
     "express": "^4.14.0",
@@ -20,9 +19,6 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "bin": {
-    "mandorla-cli": "./mandorla-cli.js"
   },
   "repository": {
     "type": "git",
