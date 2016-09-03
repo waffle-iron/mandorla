@@ -1,3 +1,4 @@
+[![Stories in Ready](https://badge.waffle.io/orzata/mandorla.png?label=ready&title=Ready)](https://waffle.io/orzata/mandorla)
 # orzata / mandorla
 [![npm version](https://badge.fury.io/js/mandorla.svg)](https://badge.fury.io/js/mandorla)
 [![Dependency Status](https://gemnasium.com/badges/2b2512e94abf8999515ccfd63747d3da.svg)](https://gemnasium.com/0209d5a56cf40e49d264be7077197eb1)
